@@ -1,0 +1,85 @@
+:root {
+    --bg-success: #5cb85c;
+    --bg-danger: #d9534f;
+    --bg-warning: #ffae42;
+    --bg-primary: #337ab7;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: #333;
+    color: #fff;
+}
+.container {
+    min-height: calc(100vh - 50px);
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board div {
+    margin-right: 10px;
+}
+.x, .y {
+    border: 1px solid #fff;
+    padding: 15px 25px;
+}
+.x{
+    border: 2px solid var(--bg-success);
+}
+.y {
+    border: 2px solid var(--bg-primary);
+}
+.x, .y, .eqls {
+font-size: 1.5rem;
+}
+.eqls, .add {
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+input[type="number"]{
+    padding: 10px 5px;
+    width: 60px;
+    font-size: 1.2rem;
+    margin-right: 6px;
+}
+.btn {
+    padding: 10px 5px;
+    font-size: 1.2rem;
+    border: 1px solid var(--bg-danger);
+    background: var(--bg-danger);
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn:active{
+    transform: scale(.92);
+}
+.remark{
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+.correct {
+    color: var(--bg-success);
+}
+
+.wrong {
+    color: var(--bg-danger);
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+}
